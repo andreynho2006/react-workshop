@@ -9,25 +9,19 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 var React = require('react');
-var sortBy = require('sort-by');
 
-var DATA = {
-  title: 'Menu',
-  items: [
-    { id: 1, name: 'tacos', type: 'mexican' },
-    { id: 2, name: 'burrito', type: 'mexican' },
-    { id: 3, name: 'tostada', type: 'mexican' },
-    { id: 4, name: 'hush puppies', type: 'southern' }
-  ]
-};
-
-var Menu = React.createClass({
+var App = React.createClass({
   render () {
-    return null;
+    return (
+      <div>
+        <h1>Hello from JSX</h1>
+        <ul>
+          <li>Marc with C</li>
+          <li>Mark with K</li>
+        </ul>
+      </div>
+    )
   }
-});
+})
 
-React.render(<Menu/>, document.body, () => {
-  require('./tests').run();
-});
-
+React.render(<App />, document.body);
